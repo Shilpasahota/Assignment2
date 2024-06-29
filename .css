@@ -1,0 +1,114 @@
+:root {
+    --primary-color:blue;
+    --secondary-color: purple;
+    --font-family: 'Arial, sans-serif';
+}
+
+body {
+    font-family: var(--font-family);
+    color: yellow
+    margin 0;
+    padding: 0;
+}
+
+header, nav, main, footer {
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: red;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+nav ul li a:hover {
+    color: sky blue;
+    transition: color 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, nav, main, footer {
+        padding: 10px;
+    }
+}
+/* Primary color for links and buttons */
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+/* Animation for sections to fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+header {
+    background-color: var(--primary-color);
+    color: yellow;
+}
+
+footer {
+    background-color: #333;
+    color: green;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
